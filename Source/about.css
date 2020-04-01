@@ -1,37 +1,78 @@
-/* body{ */
-/* } */
-body {
-    /* background-image: url(/Images/code2.jpg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* margin: 10px 10px; */
-    line-height: 1.4;
-    padding: 0em;
-  }
-  section{
-      display: grid;
-      /* grid-gap: 20px; */
-      grid-template-columns: auto auto auto;
-      margin: 0;
-      padding: 1rem;
- 
-  }
- 
-img{
-    display: block;
-    min-width: 200px;
-    /* width: 100%; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-font-size: 5rem;
-/* background-color: #89608E; */
-display: block;
-text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    background-color: steelblue;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-@media screen and (max-width: 376px){
-    section{
-        grid-template-columns: 1fr;
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: (1 1fr);
+    padding: 10px;
+    
+    
+}
+
+
+
+h1{
+    padding: 2.5rem 1rem;
+    align-content: center;
+    color: snow;
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
+}
+#vineyard{
+    width: 100%;
+    border-radius: 1%;
+}
+
+#coding {
+    width:100%;
+    padding-bottom: 30px;
+    border-radius: 1%;
+
+}
+h2{
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color: powderblue;
+    font-size: 1.5rem;
+   
+}
+p{
+    text-align: center;
+    font-family: 'Gotu', sans-serif;
+    border: 2px solid;
+    border-radius: 1vh;
+    color: rgb(47, 223, 193);
+    /* margin-top: 2rem; */
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 750px){
+    .inner{
+        display: grid;
+        grid-gap: 1rem;
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        
     }
+   body{
+    background-color:  #2559C5;
+    background-size: cover;
+    height: 100vh;
+   }
+
 }
